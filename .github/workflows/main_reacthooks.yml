@@ -25,4 +25,4 @@ jobs:
       run: npm install -g surge
 
     - name: Deploy to Surge
-      run:  surge ./build https://reacthooks-learn-counter.surge.sh.surge.sh/ --token ${{secrets.HOOKS_TOKEN}}
+      run:  surge ./build https://reacthooks-learn-counter.surge.sh/ --token ${{secrets.HOOKS_TOKEN}}
