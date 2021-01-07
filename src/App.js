@@ -12,9 +12,16 @@ const App = () => {
   const IncNum = () => {
     setCount(count + 1);
   }
-  const DecNum = () => {
-    setCount(count - 1);
+
+  if (count < 0) {
+    const DecNum = () => {
+      setCount(count - 1);
+    }
+  } else {
+    alert('Sorry, Zero Limit Reached')
+    setCount(0);
   }
+
   const Reset = () => {
     setCount(count = 0);
   }
